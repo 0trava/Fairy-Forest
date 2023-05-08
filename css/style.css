@@ -12,6 +12,7 @@
  --index: calc(1vw + 1vh);
  --text: #f7f7f3;
  --main-article-transform: matrix3d(0, calc(var(--scrollTop)/ 7.5), 0);
+ --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
 }
 
 
@@ -63,15 +64,7 @@ body{
     position: relative;
 }
 
-.layer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    will-change: transform;
 
-}
 
 .layer__header {
     z-index: 1;
@@ -81,6 +74,7 @@ body{
     font-weight: 900;
     color: var(--text);
     text-shadow: 0 0 15px #9e7d35;
+    transition: var(--transition);
 
 }
 
@@ -98,18 +92,35 @@ body{
     letter-spacing: calc(var(--index)/2.25 );
 }
 
-.layers__middle {
-    z-index: 2;
-    transform: translate3d(0, calc(var(--scrollTop)/2.5), 0);
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    transition: var(--transition);
+
 }
 
 .layers__base {
     z-index: 0;
     transform: translate3d(0, calc(var(--scrollTop)/1.6), 0);
+
+    
 }
+
+.layers__middle {
+    z-index: 2;
+    transform: translate3d(0, calc(var(--scrollTop)/2.5), 0);
+
+}
+
 .layers__front {
     z-index: 2;
     transform: translate3d(0, calc(var(--scrollTop)/5.7), 0);
+
 }
 .main-article {
     min-height: 100vh;
@@ -122,6 +133,7 @@ body{
     align-items: center;
     position: relative;
     text-align: center;
+    
 
 
 
@@ -133,6 +145,8 @@ body{
     letter-spacing: calc(var(--index) / 7.5);
     transform: matrix3d(0, calc(var(--scrollTop)/ -7.5), 0);
     will-change: transform;
+    transition: var(--transition);
+
 }
 
 .main-article__text{
@@ -140,8 +154,14 @@ body{
     font-size: calc(var(--index)* .9);
     margin-top: calc(var(--index)/ 1.25);
     transform: matrix3d(0, calc(var(--scrollTop)/ -7.5), 0);
+    transition: var(--transition);
     will-change: transform;
 
+}
+
+
+.container{
+    will-change: transform;
 }
 
 .copy {
@@ -150,4 +170,7 @@ body{
     opacity: .45;
     font-size: calc(var(--index)*.75);
     letter-spacing: calc(var(--index) / 37.5);
+    left: 42%;
 }
+
+
