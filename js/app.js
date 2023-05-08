@@ -1,3 +1,6 @@
 window.addEventListener('scroll', e => {
     document.body.style.cssText = `--scrollTop: ${this.scrollY}px`
-})
+});
+
+// WebGLSampler.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);

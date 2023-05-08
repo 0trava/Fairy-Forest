@@ -7,10 +7,16 @@
     <title>Fairy-Forest</title>
     <!-- SCRIPT -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="js/app.js" defer></script>
+
 </head>
 <body>
-<!-- HEADER -->
+<div class="wrapper">
+    <div class="container">
+                <!-- HEADER -->
   <header class="main-header">
     <div class="layers">
         <div class="layer__header">
@@ -19,7 +25,7 @@
         </div>
 
         <div class="layer layers__base" style="background-image: url(./img/layer-base.png)"></div>
-        <div class="layer layers__title" style="background-image: url(./img/layer-middle.png)"></div>
+        <div class="layer layers__middle" style="background-image: url(./img/layer-middle.png)"></div>
         <div class="layer layers__front" style="background-image: url(./img/layer-front.png)"></div>
 
     </div>
@@ -28,13 +34,16 @@
 <article class="main-article" style="background-image: url(img/dungeon.jpg);">
     <div class="main-article__content">
         <h2 class="main-article__header">To be continued</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis tempora nesciunt 
+        <p class="main-article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis tempora nesciunt 
            consequuntur placeat voluptate. Assumenda deserunt sapiente consectetur eveniet iure 
            distinctio fuga corporis? Temporibus, recusandae. Ipsam at odit saepe voluptate cum veniam?</p>
         <div class="copy">© WebDesign Master</div>
     </div>
 </article>
+    </div>
 
+
+</div>
 </body>
 
 </html>
