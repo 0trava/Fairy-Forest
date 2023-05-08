@@ -1,0 +1,83 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Загальні змінні*/
+:root {
+
+}
+
+
+@font-face {
+    font-family: raleway_f ;
+    src: url(../fonts/raleway-regular.woff2);
+}
+
+@font-face {
+    font-family: raleway_f ;
+    src: url(../fonts/raleway-black.woff2);
+    font-weight: 900;
+}
+
+
+body{
+    background-color: #010101;
+    color: white;
+    font-family: raleway_f, sans-serif;
+    line-height:  1.55;
+}
+
+
+
+.main-header {
+    position: relative;
+}
+
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.layer__header {
+
+}
+.layers__caption {
+
+}
+.layers__title {
+
+}
+
+.layers__base {
+}
+.layers__front {
+}
+.main-article {
+    min-height: 100vh;
+
+
+
+}
+.main-article__content {
+}
+.main-article__header {
+}
+.copy {
+}

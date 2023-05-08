@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fairy-Forest</title>
+    <!-- SCRIPT -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
 </head>
 <body>
 <!-- HEADER -->
-  <header>
+  <header class="main-header">
+    <div class="layers">
+        <div class="layer__header">
+            <div class="layers__caption">Welcom to Parallax</div>
+            <div class="layers__title">Fairy forest</div>
+        </div>
 
+        <div class="layer layers__base" style="background-image: url(./img/layer-base.png)"></div>
+        <div class="layer layers__title" style="background-image: url(./img/layer-middle.png)"></div>
+        <div class="layer layers__front" style="background-image: url(./img/layer-front.png)"></div>
+
+    </div>
   </header>
 <!-- BODY -->
-  <body>
-    
-  </body>
-
-<!-- FOOTER -->
-  <footer>
-
-  </footer>
-
-
-<!-- ADD JS -->
+<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+    <div class="main-article__content">
+        <h2 class="main-article__header">To be continued</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis tempora nesciunt 
+           consequuntur placeat voluptate. Assumenda deserunt sapiente consectetur eveniet iure 
+           distinctio fuga corporis? Temporibus, recusandae. Ipsam at odit saepe voluptate cum veniam?</p>
+        <div class="copy">© WebDesign Master</div>
+    </div>
+</article>
 
 </body>
 
